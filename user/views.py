@@ -9,6 +9,21 @@ from ITW_Project2 import settings
 from django.core.mail import send_mail
 # Create your views here.
 
+
+def contact(request):
+    return render(request ,"user/contact.html")
+
+
+def services(request):
+    return render(request ,"user/services.html")
+
+
+def about(request):
+    return render(request ,"user/about.html")
+
+
+
+
 def home(request):
     #return HttpResponse("Hello world")
     return render(request, "user/index.html")

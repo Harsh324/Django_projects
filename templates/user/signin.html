@@ -1,0 +1,143 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>TechStack</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <link rel="stylesheet" href="{% static 'user/Style/style.css' %}">
+
+	<link rel="stylesheet" href={% static 'user/Style/reset.min.css' %} />
+	<link rel="stylesheet" href= {% static 'user/Style/style2.css' %} />
+	<link rel="stylesheet" href={% static 'user/Style/header-1.css' %} />
+
+	</head>
+	<body>
+		{% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    	{% endif %}
+
+
+		<!-- Header Start -->
+		<header class="site-header">
+			<div class="wrapper site-header__wrapper">
+				<a href="#" class="brand">TechStack</a>
+				<nav class="nav">
+					<button class="nav__toggle" aria-expanded="false" type="button">
+						menu
+					</button>
+					
+					<ul class="nav__wrapper">
+						<li class="nav__item"><a href="#">Home</a></li>
+						<li class="nav__item"><a href="#">About</a></li>
+						<li class="nav__item"><a href="#">Services</a></li>
+						<li class="nav__item"><a href="#">Contact</a></li>
+						<li class="nav__item"><a href="signin">Sign in</a></li>
+						<li class="nav__item"><a href="signup">Sign up</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+	<section class="ftco-section">
+
+		<div class="container">
+
+
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Login</h2>
+				</div>
+			</div>
+
+
+			<div class="row justify-content-center">
+
+				<div class="col-md-12 col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="img" style="background-image: url('{% static 'user/Images/Im2.jpg' %}');">
+			      </div>
+						<div class="login-wrap p-4 p-md-5">
+
+							
+			      	<div class="d-flex">
+
+
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Sign In</h3>
+			      		</div>
+
+
+						<div class="w-100">
+							<p class="social-media d-flex justify-content-end">
+								<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+								<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+							</p>
+						</div>
+
+
+			      	</div>
+
+
+					<form action="/signin" class="signin-form" method="post">
+
+						{% csrf_token %}
+
+						<div class="form-group mb-3">
+							<label class="label" for="name">Username</label>
+							<input type="text" id = "username" name = "username" class="form-control" placeholder="Username" required>
+						</div>
+
+						<div class="form-group mb-3">
+							<label class="label" for="password">Password</label>
+							<input type="password" id = "pass1" name = "pass1" class="form-control" placeholder="Password" required>
+						</div>
+
+
+						<div class="form-group">
+							<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
+						</div>
+
+
+
+						<div class="form-group d-md-flex">
+							<div class="w-50 text-left">
+								<label class="checkbox-wrap checkbox-primary mb-0">Remember Me<input type="checkbox" checked><span class="checkmark"></span></label>
+							</div>
+							<div class="w-50 text-md-right">
+								<a href="#">Forgot Password</a>
+							</div>
+						</div>
+					</form>
+
+
+		          <p class="text-center">Not a member? <a data-toggle="tab" href="/signup">Sign Up</a></p>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <script src="{% static 'user/Js/jquery.min.js' %}"></script>
+    <script src="{% static 'user/Js/popper.js' %}"></script>
+    <script src="{% static 'user/Js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'user/Js/main.js' %}"></script>
+	<script src={% static 'user/Js/header-1.js'%}></script>
+
+
+	</body>
+</html>

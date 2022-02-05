@@ -1,0 +1,424 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav { 
+    color: whitesmoke;
+      
+    padding: 20px 10px;
+  }
+
+  #allback {
+    margin-right: 0%;
+    background-image: url('images/back/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 4000px;
+  }
+  
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ 
+
+  .TECHNEWS0 {
+    margin-left: 600px;
+      text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+
+
+
+  .navBottom {
+      margin-top: 50px;
+      margin-bottom: 0px;
+
+    display: flex;
+    align-items:center ;
+    justify-content:left;
+  }
+  
+  .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 500;
+  }
+  #joinus {
+      margin-left: 600px;
+
+  }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #8d84c4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(224, 218, 218);
+  opacity: 0.8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: rgb(27, 103, 173);} */
+ .dropdown-content a:hover {background-color: #3f4042;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3f4042;}
+
+#slideback {
+  margin-right: 0%;
+  
+}
+
+.container {
+  margin-top: 0px;
+  padding-left: 300px;
+  padding-right: 200px;
+  border-color: #8d84c4;
+  border-radius: 2px;
+  
+  opacity: 0.8;
+}
+#slider {
+  position: relative;
+  width: 800px;
+  height: 400px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+#slider ul li img{
+  width: 800px;
+  height: 400px;
+}
+ 
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 1rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  margin-right: 0%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img {
+  width: 600px;
+  height: 300px;
+}
+
+#img1 {
+  margin-top: 80px;
+  margin-left: 150px;
+}
+
+#img2 {
+  margin-top: 80px;
+  margin-left: 380px;
+}
+
+#img3 {
+  margin-top: 80px;
+ margin-left: 150px;
+}
+
+#img4 {
+  margin-top: 80px;
+  margin-left: 380px;
+}
+
+.cont {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  margin-left: 200px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.box1 {
+  
+  margin-top: 192px;
+  background: local;
+  /* margin: 1rem; */
+  padding: 2rem;
+  /* width: 35rem; */
+  text-align: center;
+  box-shadow: 0 0 .3rem rgba(0,0,0,.3);
+  position: relative;
+  font-size: 1rem;
+  color: rgb(247, 244, 244);
+}
+.box2 {
+  
+  margin-top: 0%;
+  background: local;
+  /* margin: 1rem; */
+  padding: 2rem;
+  /* width: 35rem; */
+  text-align: center;
+  box-shadow: 0 0 .3rem rgba(0,0,0,.3);
+  position: relative;
+  font-size: 1rem;
+  color: rgb(247, 244, 244);
+}
+
+#input1 {
+  background-image: url('images/back/background.jpg');
+
+}
+
+
+.input {
+  margin-top: 20px;
+  
+}
+
+
+.button {
+  position: relative;
+  background-color: #2776EA;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 7px;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+
+}
+
+.buttonsub {
+  position: relative;
+  background-color: #3f4042;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+ 
+
+}
+
+.button:after {
+  content: "";
+  background: #3f4042;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+.text-block1 {
+  margin-left: 140px;
+  position: absolute;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block2 {
+ margin-left: 950px;
+ position: absolute;
+ color: black;
+  
+}
+.text-block3 {
+  margin-top: 380px;
+  margin-left: 300px;
+  position: absolute;
+  color: black;
+}
+
+.text-block4 {
+  margin-top: 380px;
+  margin-left: 950px;
+  position: absolute;
+  color: black;
+}
+
+
+/* news images of AI, Cyber Security, Android and Robotics */
+
+.left {
+  margin-bottom: 1px;
+  height: 37%;
+  width: 27%;
+  position: absolute;
+  
+}
+.right {
+  margin-bottom: 1px;
+  height: 37%;
+  width: 73%;
+  position: absolute;
+  
+ 
+}
+.left {
+  left: 0;
+  background-color: rgb(246, 245, 248);
+}
+.right {
+  right: 0;
+  background-color: rgb(250, 246, 249);
+}
+
+.news {
+  margin-top: 200px;
+  border: #FFFFFF;
+  border-radius: 1px;
+
+
+}
+.column1 {
+  margin-left: 10px;
+  height: 190px;
+  width: 350px;
+  
+}
+.underline {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* .latestup {
+  background-image: url('images/background.jpg');
+  background-size: 2000px;
+  background-repeat: no-repeat;
+} */
+
+
+
+/* About Us */
+
+.AboutUs {
+  background-color: #FFFFFF;
+  height: 580px;
+}
+.AboutUs1 {
+  padding-top: 4%;
+  text-align: center;
+  
+}
+
+.AboutUs2 {
+  max-width: 70%;
+  margin-left: 17%;
+  margin-top: 5%;
+}

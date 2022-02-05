@@ -9,7 +9,24 @@
         <link rel="stylesheet" href={% static 'user/Style/reset.min.css' %} />
         <link rel="stylesheet" href= {% static 'user/Style/style2.css' %} />
         <link rel="stylesheet" href={% static 'user/Style/header-1.css' %} />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href={% static 'user/Style/style6.css' %}>
+
+
+        <!-- ===== Link Swiper's CSS ===== -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <!-- ===== Fontawesome CDN Link ===== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href={% static 'user/Style/style5.css' %} />
+
     </head>
+
+
     <body>
         <!-- Header Start -->
         <header class="site-header">
@@ -21,10 +38,10 @@
                     </button>
                     
                     <ul class="nav__wrapper">
-                        <li class="nav__item"><a href="#">Home</a></li>
-                        <li class="nav__item"><a href="#">About</a></li>
-                        <li class="nav__item"><a href="#">Services</a></li>
-                        <li class="nav__item"><a href="#">Contact</a></li>
+                        <li class="nav__item"><a href="">Home</a></li>
+                        <li class="nav__item"><a href="about">About</a></li>
+                        <li class="nav__item"><a href="services">Services</a></li>
+                        <li class="nav__item"><a href="contact">Contact</a></li>
                         <li class="nav__item"><a href="signin">Sign in</a></li>
                         <li class="nav__item"><a href="signup">Sign up</a></li>
                     </ul>
@@ -32,7 +49,171 @@
             </div>
         </header>
         <!-- Header End -->
+        <div class="container1">
 
+
+
+            <section>
+    
+                <div class="swiper mySwiper container">
+                  <div class="swiper-wrapper content">
+            
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src={% static 'user/Images/AI&ML.jpg' %} alt="">
+                        </div>
+                        <br>
+                        <div class="name-profession">
+                          <span class="name">AI/ML Related Content</span>
+                          <br><br>
+                          <span class="profession">Let Machines think</span>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">details</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src={% static 'user/Images/Android.jpg' %} alt="">
+                        </div>
+                        <br>
+                        <div class="name-profession">
+                          <span class="name">Android Development</span>
+                          <br><br>
+                          <span class="profession">Let's talk in android apps</span>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">details</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src={% static 'user/Images/Robotics.jpg' %} alt="">
+                        </div>
+                        <br>
+                        <div class="name-profession">
+                          <span class="name">Robotics/IOT Contents</span>
+                          <br><br>
+                          <span class="profession">Let's Automate things</span>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">details</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src={% static 'user/Images/Cyber_Security.jpg' %} alt="">
+                        </div>
+                        <br>
+                        <div class="name-profession">
+                          <span class="name">Cybersecurity</span>
+                          <br><br>
+                          <span class="profession">Let's Secure the Cybernetwork</span>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">details</button>
+                        </div>
+                      </div>
+                    </div>
+
+            
+                  </div>
+                </div>
+            
+
+                <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+
+              </section>
+
+
+              
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+            </script>
+        </div>
+
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Legacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Careers</h3>
+                            <ul>
+                                <li><a href="#">Job openings</a></li>
+                                <li><a href="#">Employee success</a></li>
+                                <li><a href="#">Benefits</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">Company Name © 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        
+
+ 
         <script src={% static 'user/Js/header-1.js'%}></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
     </body>
 </html>

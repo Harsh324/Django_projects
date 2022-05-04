@@ -55,7 +55,7 @@ def signup(request):
     
 
         if pass1 != pass2:
-            messages.error(error, "passwords did not matched")
+            messages.error(request, "passwords did not matched")
             return redirect('signup')
 
         if not username.isalnum():
